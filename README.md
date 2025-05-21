@@ -23,6 +23,7 @@
 
 10.Display the stack after popping the last 3 elements.
 
+
 ### Program:
 ### Name:Harinishri S
 ### Reg no:212223090008
@@ -44,11 +45,13 @@ print(L)
 
 
 ### Result: Thus, the given program is implemented and executed successfully .
+
  
 
-
 ### EX: 10.2 IMPLEMENTATION OF STACK
+
 ### Aim: To Write a python program to implement the stack using deque method for rotating the stack.
+
 ### Algorithm:
 
 STEP 1: Start.
@@ -66,6 +69,7 @@ STEP 6: Using rotate function rotate the stack.
 STEP 7 : Print the result. 
 
 STEP 8 : Stop.
+
 ### Program: 
 ### Name:Harinishri S
 ### Reg No:212223090008
@@ -87,68 +91,90 @@ print(f"Stack after rotation {stack}")
 
 
 EX: 10.3 QUEUE
-### Aim: To Write a python program to implement the stack using deque method for rotating the stack.
+
+### Aim: To develop a python program to remove the two string values from the rear end  
+
+
 ### Algorithm:
 
-STEP 1: Start.
+1.Start
 
-STEP 2: Import collections and import deque.
+2.Read an integer n (number of strings).
 
-STEP 3: Create a stack and a variable n.
+3.Initialize an empty deque q.
 
-STEP 4: Get the number of inputs from user.
+4.For n times, read a string and append it to q.
 
-STEP 5: Using a loop get the inputs from user.
+5.Remove two elements from the rear of q using pop() (if q is not empty).
 
-STEP 6: Append the even and unique elements in the stack.
+6.Print the resulting deque.
 
-STEP 7: Print the result.
+7.End
+
+
 ### Program:
+### Name:Harinishri S
+### Rrg No:212223090008
 ```
-import collections
-stack = collections.deque([])
-n = int(input())
+from collections import deque
+q=deque()
+n=int(input())
 for i in range(n):
-       x = int(input())
-        if x not in stack:
-          if x%2==0:
-             stack.appendleft(x)
-print(stack)
+    q.append(input())
+for i in range(2):
+    q.popleft()
+print(q)    
 ```
 ### Output:
-![image](https://github.com/user-attachments/assets/de6e3e09-b10b-42d4-9faf-32fcf990f29a)
+![image](https://github.com/user-attachments/assets/6bb8a0dc-a0ac-416b-ae9d-7580a0093c33)
+
  
 ### Result: Thus, the given program is implemented and executed successfully .
 
 
-### EX: 10.4 IMPLEMENTATION OF QUEUE
-### Aim: To Develop a python program to get the 4 integer values from user and display the values using multiprocessing library
+### EX: 10.4 Types of queue
+
+### Aim: To Develop a python program to display the student details based on rank order (ascending order)
+
 ### Algorithm:
 
-STEP 1: Start.
+1.Start
 
-STEP 2: From Multiprocessing Import Queue.
+2.Read an integer n (number of entries).
 
-STEP 3: Create a list and get the input from user.
+3.Initialize an empty list l.
 
-STEP 4 : Append the elements in the list.
+4.Repeat n times:
 
-STEP 5: Using 'get' built-in function print the list.
+5.Read a string x (in format "item1,item2").
 
-STEP 6 : Print the result.
+6.Split x by comma into two parts.
 
-STEP 7 : Stop.
+7.Append the tuple (item1, item2) to list l.
+
+8.Sort the list l.
+
+9.Print each tuple from the sorted list.
+
+10.End
+
 ### Program:
+### Name:Harinishri S
+### Reg No:212223090008
 ```
-from multiprocessing import Queue
-queue = Queue()
-for i in range(4):
-    queue.put(int(input()))
-for i in range(4):
-     print(queue.get())
+n=int(input())
+l=[]
+for i in range(n):
+    x=input()
+    ab=x.split(",")
+    l.append((ab[0],ab[1]))
+l.sort()    
+for i in l:
+    print(i)
 ```
 ### Output:
- ![image](https://github.com/user-attachments/assets/26a380ff-118e-43f4-8178-83a5417262b5)
+ ![image](https://github.com/user-attachments/assets/75ec3413-c09a-4dd0-83e2-3e217730fb68)
+
  
 
 ### Result: Thus, the given program is implemented and executed successfully .
