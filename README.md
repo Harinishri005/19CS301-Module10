@@ -1,6 +1,6 @@
 # 19CS301-Module10
 ###EX: 10.a  STACK
-### Aim:Write a python program to get the integer values from the user and push only the even number into the stack and later pop the last 3 elements
+### Aim:To write a python program to get the integer values from the user and push only the even number into the stack and later pop the last 3 elements
 
 ### Algorithm:
 1.Initialize an empty stack.
