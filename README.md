@@ -1,35 +1,47 @@
 # 19CS301-Module10
 ###EX: 10.a  STACK
-### Aim: To Write a python program to get the integer values from the user and push only the odd number into the stack and later pop the last 2 elements
+### Aim:Write a python program to get the integer values from the user and push only the even number into the stack and later pop the last 3 elements
+
 ### Algorithm:
-STEP 1: Start.
+1.Initialize an empty stack.
 
-STEP 2: Create a list and a variable n.
+2.Repeat until the user enters 'done':
 
-STEP 3: Get the value of n from user.
+3.Take integer input from the user.
 
-STEP 4: Using loop append only odd elements in the stack.
+4.If the input is even, push it into the stack.
 
-STEP 5 : Using another loop using built-in pop operation pop the last two elements.
+5.Display the current stack.
 
-STEP 6: Print the result.
+6.Initialize a counter to 0.
 
-STEP 7 : Stop.
+7.While the stack is not empty and the counter is less than 3:
+
+8.Pop the top element from the stack.
+
+9.Increment the counter.
+
+10.Display the stack after popping the last 3 elements.
+
 ### Program:
+### Name:Harinishri S
+### Reg no:212223090008
 ```
-l = []
-n = int(input())
+L=[]
+n=int(input())
 for i in range(n):
-       x = int(input())
-       if x%2!=0:
-            l.append(x)
- print(l)
-for i in range(2):
-      l.pop()
-     print(l)
+    value=int(input())
+    if value%2==0:
+        L.append(value)
+print(L)        
+for i in range(3):
+    L.pop()
+print(L)    
+    
 ```
 ### Output:
- ![image](https://github.com/user-attachments/assets/d2ce0434-7594-41af-ba20-3d7ecf9e0d93)
+ ![image](https://github.com/user-attachments/assets/4cffe6e6-527a-4b54-bb2e-660972a9cba9)
+
 
 ### Result: Thus, the given program is implemented and executed successfully .
  
@@ -55,6 +67,8 @@ STEP 7 : Print the result.
 
 STEP 8 : Stop.
 ### Program: 
+### Name:Harinishri S
+### Reg No:212223090008
 ```
 import collections
 def fun(n):
