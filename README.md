@@ -178,5 +178,50 @@ for i in l:
  
 
 ### Result: Thus, the given program is implemented and executed successfully .
+
+
+## SEB: EX:10.5
+# Aim:
+To develop a python program to get string values from the user and display the values using circular queue
+
+# Algorithm:
+STEP 1:Import the queue module.
+
+STEP 2:Create an empty queue.
+
+STEP 3:Use queue.Queue() to initialize an empty queue named de.
+
+STEP 4:Read the number of inputs (n).
+
+STEP 5:Take an integer input from the user representing how many elements will be processed.
+
+STEP 6:Immediately remove the front item from the queue using get().
+
+STEP 7:Print the removed item on the same line, separated by a space.
+
+STEP 8: Print the contents of the deque.
+
+STEP 9: Stop.
+
+# Program:
+# Name:Harinishri S
+# Reg No:212223090008
+```
+import queue
+de=queue.Queue()
+n=int(input())
+for i in range(n):
+    x=input()
+    de.put(x)
+    print(de.get(),end=" ")
+```
+Output:
+![image](https://github.com/user-attachments/assets/e2b0f579-50dd-4f59-b723-9f0a83822518)
+
+
+Result:
+Thus, the given program is implemented and executed successfully .
+
+
  
 
